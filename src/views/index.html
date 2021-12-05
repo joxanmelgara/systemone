@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+  <meta name="author" content="Creative Tim">
+  <title>Facturacion - system</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/brand/favicon.png" type="image/png">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <!-- Icons -->
+  <link rel="stylesheet" href="assets/vendor/nucleo/css/nucleo.css" type="text/css">
+  <link rel="stylesheet" href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+  <!-- Page plugins -->
+  <!-- Argon CSS -->
+  <link rel="stylesheet" href="assets/css/argon.css?v=1.2.0" type="text/css">
+  <link rel="stylesheet" href="css/icons/css/fontello.css">
+</head>
+
+<body>
+  <!-- Sidenav -->
+  <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+    <div class="scrollbar-inner">
+      <!-- Brand -->
+      <div class="sidenav-header  align-items-center">
+        <a class="navbar-brand" href="javascript:void(0)">
+          <img src="" class="navbar-brand-img" alt="...">
+        </a>
+      </div>
+      <div class="navbar-inner">
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+          <!-- Nav items -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="examples/dashboard.html">
+                <i class="ni ni-tv-2 text-primary"></i>
+                <span class="nav-link-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="facturacion.html">
+                <i class="ni ni-credit-card text-orange"></i>
+                <span class="nav-link-text">Facturacion</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="ni ni-collection text-primary"></i>
+                <span class="nav-link-text">Reportes</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <i class="ni ni-laptop text-yellow"></i>
+                <span class="nav-link-text">Inventario</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="ni ni-single-02 text-default"></i>
+                <span class="nav-link-text">Clientes</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="ni ni-key-25 text-info"></i>
+                <span class="nav-link-text">Usuarios</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="ni ni-money-coins text-pink"></i>
+                <span class="nav-link-text">Transacciones</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                <i class="ni ni-archive-2 text-dark"></i>
+                <span class="nav-link-text">Edicon de factura</span>
+              </a>
+            </li>
+          </ul>
+        
+  </nav>
+  <!-- Main content -->
+  <div class="main-content" id="panel">
+    <!-- Topnav -->
+    <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Search form -->
+          <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
+            <div class="form-group mb-0">
+              <div class="input-group input-group-alternative input-group-merge">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-search"></i></span>
+                </div>
+                <input class="form-control" placeholder="Buscar..." type="text">
+              </div>
+            </div>
+            <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </form>
+          <!-- Navbar links -->
+          <ul class="navbar-nav align-items-center  ml-md-auto ">
+            <li class="nav-item d-xl-none">
+              <!-- Sidenav toggler -->
+              <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main">
+                <div class="sidenav-toggler-inner">
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item d-sm-none">
+              <a class="nav-link" href="#" data-action="search-show" data-target="#navbar-search-main">
+                <i class="ni ni-zoom-split-in"></i>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="ni ni-ungroup"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-dark bg-default  dropdown-menu-right ">
+                <div class="row shortcuts px-4">
+                  <a href="#!" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-red">
+                      <i class="ni ni-calendar-grid-58"></i>
+                    </span>
+                    <small>Calendar</small>
+                  </a>
+                  <a href="#!" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-orange">
+                      <i class="ni ni-email-83"></i>
+                    </span>
+                    <small>Email</small>
+                  </a>
+                  <a href="#!" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-info">
+                      <i class="ni ni-credit-card"></i>
+                    </span>
+                    <small>Payments</small>
+                  </a>
+                  <a href="#!" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-green">
+                      <i class="ni ni-books"></i>
+                    </span>
+                    <small>Reports</small>
+                  </a>
+                  <a href="#!" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-purple">
+                      <i class="ni ni-pin-3"></i>
+                    </span>
+                    <small>Maps</small>
+                  </a>
+                  <a href="#!" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-yellow">
+                      <i class="ni ni-basket"></i>
+                    </span>
+                    <small>Shop</small>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
+            <li class="nav-item dropdown">
+              <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="media align-items-center">
+                  <span class="avatar avatar-sm rounded-circle">
+                    <img alt="Image placeholder" src="assets/img/brand/systemusers_104569.png">
+                  </span>
+                  <div class="media-body  ml-2  d-none d-lg-block">
+                    <span class="mb-0 text-sm  font-weight-bold">Usuario Online</span>
+                  </div>
+                </div>
+              </a>
+              <div class="dropdown-menu  dropdown-menu-right ">
+                <div class="dropdown-divider"></div>
+                <a href="#!" class="dropdown-item">
+                  <i class="ni ni-user-run"></i>
+                  <span>Logout</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <!-- Header -->
+    <div class="header bg-primary pb-6">
+      <div class="container-fluid">
+        <div class="header-body">
+          <div class="row align-items-center py-4">
+            <div class="col-lg-6 col-7">
+              <h6 class="h2 text-white d-inline-block mb-0">Inventario</h6>
+              <!-- <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul> -->
+            </div>
+          </div>
+          <!-- Card stats -->
+          <div class="row">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+      <div class="row">
+        <div class="col-xl-9">
+          <div class="card bg-white">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h6 class="text-light text-uppercase ls-1 mb-1">Datos Generales</h6>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card-body">
+              <form action="" id="form"  class="form-group row">
+
+                <input type="varchar" class="form-control col-4" name="codBarra" id="CodigoBarraProducto" placeholder="Código Barras">
+                
+                <input type="varchar" class="form-control col-3" name="nombre" id="nombreProducto" placeholder="Nombre" />
+                
+                <input type="number" class="form-control col-3" name="precioCompra" id="precioCompraProducto" placeholder="Precio Compra" />
+                
+                <select name="monedaCompra"  class="form-control col-4" id="monedaCompraProducto" style="margin-top: 6px;">
+                  <option value="Corodobas">Cordobas</option>
+                  <option value="Dolar">Dolar</option>
+                </select>
+                
+                <input type="number" class="form-control col-3" name="precioVenta" id="precioVentaProducto" placeholder="Precio Venta" style="margin-top: 6px;">
+                
+                <select name="monedaVenta" class="form-control col-3" id="monedaVentaProducto" style="margin-top: 6px;">
+                  <option value="Corodobas">Cordobas</option>
+                  <option value="Dolar">Dolar</option>
+                </select>
+                
+                <input type="number" name="cantidad"  class="form-control col-3" id="stockProducto" placeholder="Cantidad" style="margin-top: 6px;">
+               
+                
+                <input type="varchar" name="descripcion"  class="form-control col-3" id="descripcionProducto" placeholder="Descripción" style="margin-top: 6px;">
+                
+                <input type="number" name="precioMinimo"  class="form-control col-3" id="PrecioMinimoProducto" placeholder="Precio Minimo" style="margin-top: 6px;">
+                
+                <input type="number" name="utilidad"  class="form-control col-3" id="utilidadProducto" placeholder="Utilidad" style="margin-top: 6px;">
+                
+                <input type="date" name="Vencimiento"  class="form-control col-3" id="FechaVencimientoProducto" placeholder="Vencimiento" style="margin-top: 6px;">
+
+                <button type="button" onclick="save()" class="btn-1 btn btn-xs btn-success icon-floppy">Enviar</button>
+                <button type="button" onclick="actualizar()" class="btn-1 btn btn-xs btn-warning icon-arrows-cw">Actualizar</button>
+              </form>
+            </div>
+          </div>  
+        </div>
+        <div class="col-xl-3">
+            <div class="card">
+              <div class="card-header bg-transparent">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <h6 class="text-uppercase text-muted ls-1 mb-1">Opciones</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <button type="button" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#exampleModalCenter">
+                  Agregar Categoria
+                </button>
+                <button type="button" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#exampleModalCenterone">
+                  Agregar Marca
+                </button>
+                <button type="button" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#exampleModalCenteronetwo">
+                  Productos bajos en stock
+                </button>
+                <button type="button" class="btn btn-light btn-lg btn-block" data-toggle="modal" data-target="#exampleModalCenterthree">
+                  Verificar vencimiento
+                </button>
+                <button type="button" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#exampleModalCenterfour">
+                  Generar Cod Barra
+                </button>
+                
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card bg-default shadow">
+            <div class="card-header bg-transparent border-0">
+              <h3 class="text-white mb-0">Datos de facturas</h3>
+            </div>
+            <div class="table-responsive">
+              <table class="table align-items-center table-dark table-flush">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Acciones</th>          
+                    <th scope="col" class="sort" data-sort="name">Cod Barra</th>
+                    <th scope="col" class="sort" data-sort="budget">Nombre</th>
+                    <th scope="col" class="sort" data-sort="status">Precio Com </th>
+                    <th scope="col" class="sort" data-sort="completion">Moneda comp</th>
+                    <th scope="col" class="sort" data-sort="completion">Precio Ven</th>
+                    <th scope="col" class="sort" data-sort="completion">Precio Min</th>
+                    <th scope="col" class="sort" data-sort="completion">Moneda Vent</th>
+                    <th scope="col" class="sort" data-sort="completion">Fecha Venci</th>
+                    <th scope="col" class="sort" data-sort="completion">Stock</th>
+                    <th scope="col" class="sort" data-sort="completion">Categoria</th>
+                    <th scope="col" class="sort" data-sort="completion">Marca</th>
+                    <th scope="col" class="sort" data-sort="completion">Descripcion</th>
+                    <th scope="col" class="sort" data-sort="completion">Utilidad</th>
+                  </tr>
+                </thead>
+                <tbody class="list" id="table-productos">
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer class="footer pt-5">
+        <div class="row align-items-center justify-content-lg-between">
+          <div class="col-lg-6">
+            <div class="copyright text-center  text-lg-left  text-muted">
+              &copy; 2021 <a href="#" class="font-weight-bold ml-1">System</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+              <li class="nav-item">
+                <a href="#" class="nav-link">System</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <style>
+    .form-group input{
+      margin: 5px;
+    }
+    .btn-1{
+      height: 40px;
+      top: 10px;
+    }
+  </style>
+  <%- include('./partials/modals.html')  %> 
+  <script src="js/productos.js"></script>
+  <script src="js/buscar.js"></script>
+  <script src="js/moment.js"></script>
+  <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/js-cookie/js.cookie.js"></script>
+  <script src="assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+  <script src="assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+
+  <script src="assets/vendor/chart.js/dist/Chart.min.js"></script>
+  <script src="assets/vendor/chart.js/dist/Chart.extension.js"></script>
+ 
+  <script src="assets/js/argon.js?v=1.2.0"></script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+Configurar las rutas de navegacion para evitar (Cannot GET /facturacion.html)
+Configurar las vistas (usar la misma para todas las paginas) sin nececidad de reescribir codigo para cada pagina
+Configurar las alertas cuando se ejecute una accion(eliminar o editar)
+Validar que los input no esten vacios y no se envien sin datos (igual para actualizar)
+
+
